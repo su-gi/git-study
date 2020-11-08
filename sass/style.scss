@@ -1,0 +1,44 @@
+// @import 'normalize';
+// 변수 
+$theme-primary: #296897;
+$theme-secondary: #c7c7c7;
+
+%theme-color{
+  color: tomato;
+}
+
+/* 믹스인 */
+@mixin reset-list{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+@mixin clearfix{
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+.header{
+  background-color: $theme-secondary;
+  @extend %theme-color;
+  &__brand{
+    color: $theme-primary;
+    @extend %theme-color;
+  }
+  &__member{
+    @include reset-list;
+    @include clearfix;
+    @extend %theme-color;
+    background-color: yellow;
+    width: calc(30em + 100px);
+    
+    li{
+      float: left;
+      @extend %theme-color;
+    }
+  }
+}
