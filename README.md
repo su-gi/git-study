@@ -3,7 +3,7 @@
 
 11월 7일부터 22일가지 3주간 진행되는 프로젝트 과정입니다.
 
-- git 설치
+- git 설치(메일주소espor529/아이디sugi)
 - vs code 설치
 - vs code에 기본 터미널로 git bash 설정
 - node 설치 (version 14.15)
